@@ -1,0 +1,286 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+main {
+    padding: 20px;
+}
+
+a::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+span::selection {
+    background-color: transparent;
+    color: #2aadeb;
+}
+
+header nav {
+    display: block;
+    list-style: none;
+    color: black;
+    background-color: transparent;
+    padding: 0 30px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+header nav ul li a:hover {
+    color: #2aadeb;
+    transform: scale(.9);
+}
+
+header .jumbotron {
+    text-align: center;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    line-height: 100vh;
+    margin-top: -60px;
+}
+
+header .jumbotron h1 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+header .jumbotron h1 span {
+    color: #2aadeb;
+}
+
+.content {
+    float: left;
+    width: 73%;
+    box-shadow: 0px 5px 10px rgb(194, 194, 194);
+    margin-bottom: 50px;
+}
+
+
+/*! FEATURES  */
+
+main .content .features {
+    margin: 50px 0;
+    padding: 50px;
+}
+
+main h1.heading-text {
+    text-align: center;
+    font-size: 33px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+main h1.heading-text span {
+    color: #2aadeb;
+}
+
+main .content .features .feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .content .features .feature .margin {
+    margin: 50px 20px;
+    text-align: center;
+}
+
+.feature .margin i {
+    font-size: 28px;
+    color: #2aadeb;
+}
+
+.feature .margin h3 {
+    color: rgb(22, 22, 22);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+/*! SERVICES  */
+
+main .content .services {
+    background-color: rgb(248, 248, 248);
+    padding: 100px 50px;
+}
+
+main .content .service {
+    display: flex;
+}
+
+main .content .service .parallax {
+    margin: 50px 25px;
+    display: flex;
+}
+
+main .content .service .parallax .logo {
+    margin-right: 10px;
+}
+
+main .content .service .parallax .logo span {
+    font-size: 28px;
+    color: #2aadeb;
+}
+
+
+/*! CONTACT  */
+
+main .content .contact {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.contact img {
+    width: 25%;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.contact .socmed {
+    margin: 20px 0;
+}
+
+.contact .socmed a {
+    color: #2aadeb;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    transform: scale(.9);
+}
+
+.contact h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*! ASIDE  */
+
+aside {
+    float: right;
+    width: 25%;
+    box-shadow: 0px 3px 10px rgb(214, 214, 214);
+    box-sizing: border-box;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+}
+
+aside .profile {
+    text-align: center;
+}
+
+aside .profile header img {
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+aside .profile header b {
+    font-weight: 400;
+}
+
+aside .profile header p {
+    margin-top: 20px;
+}
+
+
+/*! FOOTER */
+
+footer {
+    clear: both;
+    padding: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+}
+
+footer p span {
+    color: #2aadeb;
+}
+
+@media screen and (max-width: 960px) {
+    main h1.heading-text {
+        font-size: 27px;
+    }
+    /*! FEATURES  */
+    .feature .margin i {
+        font-size: 25px;
+        color: #2aadeb;
+    }
+    .feature .margin h3 {
+        font-size: 18px;
+    }
+    main .content .service .parallax {
+        margin: 50px 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    main .content .service .parallax .logo {
+        margin-right: 0;
+    }
+    main .content .service .parallax .text h3 {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    main .content .features .feature,
+    main .content .service {
+        flex-direction: column;
+    }
+    main .content .service .parallax {
+        text-align: center;
+    }
+    header .jumbotron h1 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .content,
+    aside {
+        width: 100%;
+    }
+    header nav ul li a {
+        font-size: 14px;
+    }
+    header .jumbotron h1 {
+        font-size: 30px;
+    }
+    header nav {
+        color: black;
+        background-color: rgb(20, 20, 20);
+    }
+    header nav ul li {
+        padding: 20px 10px;
+    }
+    header .jumbotron {
+        margin-top: 0px;
+    }
+}
